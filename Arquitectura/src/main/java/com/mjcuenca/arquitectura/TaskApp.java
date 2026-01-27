@@ -1,5 +1,8 @@
 package com.mjcuenca.arquitectura;
 
+import com.mjcuenca.arquitectura.model.Task;
+import com.mjcuenca.arquitectura.service.TaskService;
+
 import java.util.List;
 import java.util.Scanner;
 

@@ -1,8 +1,8 @@
-package com.mjcuenca.arquitectura;
+package com.mjcuenca.arquitectura.model;
 
 import java.time.LocalDate;
 
-class Task {
+public class Task {
 
     public enum TaskStatus{pending,in_progress,done};
     private int id;
