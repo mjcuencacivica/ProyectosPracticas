@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TaskApp",
+            "request": "launch",
+            "mainClass": "com.mjcuenca.arquitectura.TaskApp",
+            "projectName": "arquitectura"
+        },
+        {
+            "type": "java",
+            "name": "TestConnection",
+            "request": "launch",
+            "mainClass": "com.mjcuenca.arquitectura.util.TestConnection",
+            "projectName": "arquitectura"
+        },
+        {
+            "type": "java",
             "name": "CourseManager",
             "request": "launch",
             "mainClass": "CodigoLimpio.Practica2.CourseManager",

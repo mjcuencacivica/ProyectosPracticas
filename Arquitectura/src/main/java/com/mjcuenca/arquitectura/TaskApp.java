@@ -33,8 +33,10 @@ public class TaskApp {
                     System.out.println("Propietario/a de la tarea: ");
                     String owner = scanner.nextLine();
                     try {
-                        Task newTask = taskService.addTask(name, description, owner);
-                        System.out.println("Tarea creada correctamente: " + newTask);
+                        Task savedTask = taskService.addTask(name, description, owner);
+
+                        System.out.println("Tarea creada correctamente: " + savedTask);
+                        System.out.println(savedTask);
                     } catch (IllegalArgumentException e) {
                         System.out.println("Error al crear la tarea: " + e.getMessage());
                     }
