@@ -1,7 +1,11 @@
-package com.mjcuenca.arquitectura;
+package com.mjcuenca.arquitectura.service;
 
 import java.time.LocalDate;
 import java.util.List;
+
+import com.mjcuenca.arquitectura.model.Task;
+import com.mjcuenca.arquitectura.dao.TaskDAO;
+import com.mjcuenca.arquitectura.dao.TaskDAOMemoryImpl;
 
 public class TaskService {
 
