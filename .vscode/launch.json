@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CourseManager",
+            "request": "launch",
+            "mainClass": "CodigoLimpio.Practica2.CourseManager",
+            "projectName": "MisProyectosJava_801306af"
+        },
+        {
+            "type": "java",
+            "name": "Ex4",
+            "request": "launch",
+            "mainClass": "CodigoLimpio.Practica1.Ex4",
+            "projectName": "MisProyectosJava_801306af"
+        },
+        {
+            "type": "java",
+            "name": "Ex3",
+            "request": "launch",
+            "mainClass": "CodigoLimpio.Practica1.Ex3",
+            "projectName": "MisProyectosJava_801306af"
+        },
+        {
+            "type": "java",
+            "name": "Ex2",
+            "request": "launch",
+            "mainClass": "CodigoLimpio.Practica1.Ex2",
+            "projectName": "MisProyectosJava_801306af"
+        },
+        {
+            "type": "java",
+            "name": "Ex1",
+            "request": "launch",
+            "mainClass": "CodigoLimpio.Practica1.Ex1",
+            "projectName": "MisProyectosJava_801306af"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Empleado.src.Main",
+            "projectName": "MisProyectosJava_801306af"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Documento.src.Main",
+            "projectName": "MisProyectosJava_801306af"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Empleado.Main",
+            "projectName": "MisProyectosJava_801306af"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "-Dfile.encoding=UTF-8"
+        }
+    ]
+}
