@@ -6,9 +6,6 @@ import com.mjcuenca.arquitectura.service.TaskService;
 import java.util.List;
 import java.util.Scanner;
 
-import com.mjcuenca.arquitectura.model.Task;
-import com.mjcuenca.arquitectura.service.TaskService;
-
 public class TaskApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
