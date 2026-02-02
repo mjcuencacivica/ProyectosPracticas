@@ -4,12 +4,13 @@ import java.time.LocalDate;
 import java.util.List;
 
 import com.mjcuenca.arquitectura.dao.TaskDAO;
-import com.mjcuenca.arquitectura.dao.TaskDAOMemoryImpl;
+import com.mjcuenca.arquitectura.dao.TaskDAOMySQLImpl;
 import com.mjcuenca.arquitectura.model.Task;
+
 
 public class TaskService {
 
-    private TaskDAO taskDAO = new TaskDAOMemoryImpl();
+    private TaskDAO taskDAO = new TaskDAOMySQLImpl();
 
     /**
      * Crea una nueva tarea y la guarda en la base de datos.
