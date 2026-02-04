@@ -38,7 +38,8 @@ public class Order {
     public Order() {
     }
 
-    public Order(int customerId, LocalDate orderDate, OrderStatus status, double total) {
+    public Order(Integer id, int customerId, LocalDate orderDate, OrderStatus status, double total) {
+        this.id = id;
         this.customerId = customerId;
         this.orderDate = orderDate;
         this.status = status;
