@@ -8,6 +8,13 @@
             "type": "java",
             "name": "OnlineStoreApplication",
             "request": "launch",
+            "mainClass": "com.online_store.online_store.OnlineStoreApplication",
+            "projectName": "online_store"
+        },
+        {
+            "type": "java",
+            "name": "OnlineStoreApplication",
+            "request": "launch",
             "mainClass": "com.online_store.OnlineStoreApplication",
             "projectName": "online_store"
         },

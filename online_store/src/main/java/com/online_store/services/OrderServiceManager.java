@@ -12,11 +12,11 @@ import com.online_store.repositories.OrderRepository;
 public class OrderServiceManager implements OrderService{
 
     @Autowired
-    private OrderRepository repository;
+    private OrderRepository orderRepository;
 
     @Override
     public List<Order> findAll() {
-        return repository.findAll();
+        return orderRepository.findAll();
     }
 
 }
