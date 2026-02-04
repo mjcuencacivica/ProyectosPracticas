@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Store</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* Que los bordes se junten */
+            width: 100%;
+            /* Opcional: que la tabla ocupe todo el ancho */
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            /* Borde negro en todas las celdas */
+            padding: 8px;
+            /* Espacio interno en las celdas */
+            text-align: left;
+            /* Opcional: alinear texto a la izquierda */
+        }
+
+        th {
+            background-color: #f2f2f2;
+            /* Color de fondo para la cabecera */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Listado de pedidos</h1>
+    <table>
+        <tr>
+            <th>Id del pedido</th>
+            <th>Id del cliente</th>
+            <th>Fecha del pedido</th>
+            <th>Estado del pedido</th>
+            <th>Importe total</th>
+        </tr>
+        <tr th:each="order : ${listOrders}">
+            <td th:text="${order.id}"></td>
+            <td th:text="${order.customerId}"></td>
+            <td th:text="${order.orderDate}"></td>
+            <td th:text="${order.status}"></td>
+            <td th:text="${order.total}+' €'"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
