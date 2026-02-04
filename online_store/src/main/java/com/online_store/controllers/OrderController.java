@@ -2,31 +2,28 @@ package com.online_store.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.online_store.services.OrderServiceManager;
 import java.util.List;
-import com.online_store.entities.Order;
 
+import com.online_store.dto.OrderDTO;
 
-@Controller
+@RestController
 public class OrderController {
 
     @Autowired
     private OrderServiceManager orderServiceManager;
 
     @GetMapping("/view-orders")
-    public String findAllOrders(Model model){
-        List<Order> listOrders = this.orderServiceManager.findAll();
-        model.addAttribute("listOrders", listOrders);
-        return "index";
+    public List<OrderDTO> findAllOrders() {
+        return this.orderServiceManager.findAll().stream().map(order -> new OrderDTO(
+                order.getId(),
+                order.getCustomerId(),
+                order.getOrderDate(),
+                OrderDTO.OrderStatus.valueOf(order.getStatus().name()),
+                order.getTotal())).toList();
     }
 
-
-  
-
-
-
 }
-
