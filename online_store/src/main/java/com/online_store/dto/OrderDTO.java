@@ -16,6 +16,8 @@ public class OrderDTO {
     private OrderStatus status;
     private double total;
 
+    public OrderDTO(){}
+    
     public OrderDTO (Integer id, int customerId, LocalDate orderDate, OrderStatus status, double total){
         this.id = id;
         this.customerId = customerId;
