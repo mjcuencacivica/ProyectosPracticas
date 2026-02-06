@@ -12,7 +12,5 @@ public interface OrderService {
     Order getOrderById(Integer id);
     Order saveOrder(Order order);
     Order createOrder(OrderDTO orderDTO);
-
-
-
+    Order updateOrderById(Integer id, OrderDTO dto);
 }

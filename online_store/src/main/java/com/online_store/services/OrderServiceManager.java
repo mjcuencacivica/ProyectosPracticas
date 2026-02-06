@@ -4,15 +4,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-<<<<<<< HEAD
-=======
 
 import com.online_store.dto.OrderDTO;
-import com.online_store.dto.OrderDTO.OrderStatus;
->>>>>>> 99a1661 (Creado el endpoint POST/orders para crear un pedido)
 import com.online_store.entities.Order;
 import com.online_store.repositories.OrderRepository;
-
+import com.online_store.exceptions.*;
 
 @Service
 public class OrderServiceManager implements OrderService {
@@ -48,4 +44,17 @@ public class OrderServiceManager implements OrderService {
     }
 
 
+    @Override
+    public Order updateOrderById(Integer id, OrderDTO orderDTO) {
+        Order order = getOrderById(id);
+        order.setCustomerId(orderDTO.getCustomerId());
+        order.setOrderDate(orderDTO.getOrderDate());
+        order.setStatus(Order.OrderStatus.valueOf(orderDTO.getStatus().name()));
+        order.setTotal(orderDTO.getTotal());
+    
+        return orderRepository.save(order);
+    }
+
+
+    
 }
